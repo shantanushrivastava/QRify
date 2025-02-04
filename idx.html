@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Codes to Open Apps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>QR Codes to Open Apps</h2>
+        <div class="qr-images">
+            <div class="youtube" ondblclick="openApp('https://www.youtube.com')" onclick="openApp('https://www.youtube.com')">
+                <img src="youtube_qr.png" alt="YouTube QR">
+                <div class="qr-label">YouTube</div>
+            </div>
+            <div class="whatsapp" ondblclick="openApp('https://web.whatsapp.com')" onclick="openApp('https://web.whatsapp.com')">
+                <img src="whatsapp_qr.png" alt="WhatsApp QR">
+                <div class="qr-label">WhatsApp</div>
+            </div>
+            <div class="linkedin" ondblclick="openApp('https://www.linkedin.com')" onclick="openApp('https://www.linkedin.com')">
+                <img src="linkedin_qr.png" alt="LinkedIn QR">
+                <div class="qr-label">LinkedIn</div>
+            </div>
+            <div class="instagram" ondblclick="openApp('https://www.instagram.com')" onclick="openApp('https://www.instagram.com')">
+                <img src="instagram_qr.png" alt="Instagram QR">
+                <div class="qr-label">Instagram</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openApp(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
